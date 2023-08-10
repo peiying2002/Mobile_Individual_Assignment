@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".getStarted">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_edittext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="355dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="253dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/logintext"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:text="SmartSplit"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Username"
+                    android:padding="8dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/phonenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:drawablePadding="8dp"
+                    android:hint="Phone number"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:inputType="numberDecimal"/>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:backgroundTint="@color/purple_200"
+                android:text="Start"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+
+
